@@ -37,6 +37,9 @@
       justify-self: center;
       text-align: center;
       color: var(--text-light);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
     .title-container h1 {
       font-weight: 300;
@@ -79,7 +82,7 @@
   <header class="site-header">
     <div class="logo-container">
       <a href="/">
-        <img src="path/to/logo.png" alt="EMLizard Logo" class="logo">
+        <img src="https://raw.githubusercontent.com/emlizard/main-page/7554fae51a6cf96ae8ed6b8d500a428962f22ab3/images/EMLizard%20logo.svg" alt="EMLizard Logo" class="logo">
       </a>
     </div>
     <div class="title-container">
@@ -97,31 +100,8 @@
       <h2>Your cute lizard buddy making EM calculations quick and easy!</h2>
       <p>Discover EMLizard’s suite of calculators—say goodbye to tedious formula entry!</p>
     </section>
-    <!-- 추가 콘텐츠는 여기 아래에 배치하세요 -->
-  </main>
-<header>
-    <a href="/" class="brand">
-      <img src="https://raw.githubusercontent.com/emlizard/main-page/7554fae51a6cf96ae8ed6b8d500a428962f22ab3/images/EMLizard%20logo.svg" alt="EMLizard Logo" class="logo">
 
-    </a>
-    <nav>…</nav>
-    <div class="header-content">
-      <h1>EMLizard Online Calculators</h1>
-      <nav>
-        <a href="#TL">Transmission Line</a>
-        <a href="#Core">Magnetic Core</a>
-        <a href="#WiFi">WiFi Signal</a>
-      </nav>
-    </div>
-  </header>
-
-  <main>
-    <section class="hero">
-      <h2>Your cute lizard buddy making EM calculations quick and easy!</h2>
-      <p>Discover EMLizard’s suite of calculators—say goodbye to tedious formula entry!</p>
-    </section>
-
-    <section id="TL">
+    <section id="transmission" style="margin-top:2rem;">
       <h2>RF Transmission Line</h2>
       <div class="grid">
         <div class="card">
@@ -136,9 +116,9 @@
         </div>
       </div>
     </section>
-
-    <section id="Core" style="margin-top:2rem;">
-      <h2>EE Core</h2>
+    
+    <section id="core" style="margin-top:2rem;">
+      <h2>Magnetic Core</h2>
       <div class="grid">
         <div class="card">
           <h3>EE Core</h3>
@@ -153,7 +133,7 @@
       </div>
     </section>
 
-    <section id="WiFi" style="margin-top:2rem;">
+    <section id="wifi" style="margin-top:2rem;">
       <h2>WiFi Signal</h2>
       <div class="grid">
         <div class="card">
@@ -162,20 +142,16 @@
           <a href="https://emlizard.github.io/wifilizard" target="_blank">Go to →</a>
         </div>
         <div class="card">
-          <h3>복합 계산 모드</h3>
-          <p>여러 계산기를 한 번에 실행.</p>
+          <h3>Combined Calculator</h3>
+          <p>Run multiple tools at once</p>
           <a href="https://emlizard.github.io/combined-calculator" target="_blank">Go to →</a>
         </div>
       </div>
     </section>
   </main>
 
-  <footer>
-    © 2025 EMLizard · <a href="https://github.com/emlizard" target="_blank" style="color:inherit;text-decoration:underline;">GitHub</a>
+  <footer style="text-align:center; padding:2rem 0; color: #777;">
+    © 2025 EMLizard · <a href="https://github.com/emlizard" target="_blank" style="color:inherit; text-decoration:underline;">GitHub</a>
   </footer>
-
 </body>
 </html>
-<body>
-
-  
