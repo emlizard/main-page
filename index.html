@@ -23,6 +23,7 @@
       line-height: 1.6;
     }
     header.site-header {
+      position: relative;
       display: grid;
       grid-template-columns: auto 1fr;
       align-items: center;
@@ -33,6 +34,9 @@
       height: 100px;
     }
     .title-container {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
       grid-column: 2;
       justify-self: center;
       text-align: center;
@@ -129,7 +133,7 @@
   <header class="site-header">
     <div class="logo-container">
       <a href="/">
-        <img src="https://raw.githubusercontent.com/emlizard/main-page/d590eabd3920db7cc115ea691f76824bc75a2055/images/EMLizard%20logo.svg" alt="EMLizard Logo" class="logo">
+        <img src="https://raw.githubusercontent.com/emlizard/main-page/7554fae51a6cf96ae8ed6b8d500a428962f22ab3/images/emlizard%20logo.svg" alt="EMLizard Logo" class="logo">
       </a>
     </div>
     <div class="title-container">
@@ -144,7 +148,7 @@
 
   <main>
     <section class="hero">
-      <h2>Quick and Easy EM calculations!</h2>
+      <h2>Your cute lizard buddy making EM calculations quick and easy!</h2>
       <p>Discover EMLizard’s suite of calculators—say goodbye to tedious formula entry!</p>
     </section>
 
