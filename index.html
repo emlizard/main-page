@@ -4,17 +4,50 @@
   <meta charset="UTF-8">
   <title>Welcome to My Tools</title>
 </head>
+<head>
+<meta charset="UTF-8">
+<title>Online EM Calculator</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
-  .tool-link {
+   body {
+     font-family: 'Segoe UI', sans-serif;
+     background: linear-gradient(to bottom right, #f0f4ff, #dfe9f3);
+     text-align: center;
+     padding: 50px 20px;
+     margin: 0;
+   }
+   h1 {
+     color: #333;
+     margin-bottom: 30px;
+   }
+   .link-container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     gap: 20px;
+   }
+   .tool-link {
      display: inline-block;
-     padding: 15px 25px;
-     margin: 10px;
-     background: #4CAF50;
+     padding: 15px 30px;
+     background: #4a90e2;
      color: white;
      text-decoration: none;
-     border-radius: 8px;
+     font-size: 18px;
+     border-radius: 10px;
+     box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+     transition: background 0.3s, transform 0.2s;
+   }
+   .tool-link:hover {
+     background: #357ab8;
+     transform: translateY(-2px);
+   }
+   .footer {
+     margin-top: 60px;
+     color: #777;
+     font-size: 14px;
    }
 </style>
+</head>
 <body>
   <h1>EM Design Calculator</h1>
   <ul>
