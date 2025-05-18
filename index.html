@@ -1,18 +1,17 @@
 <!DOCTYPE html>
-<html lang="ko">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>EMLizard Calculators</title>
-  <!-- 구글 폰트 (선택) -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EMLizard Online Calculators</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
       --primary: #2c3e50;
       --accent:  #1abc9c;
       --bg:      #f7f9fa;
-      --text:    #34495e;
-      --card-bg: #ffffff;
+      --text-light: #ffffff;
+      --text-dark:  #34495e;
       --radius:  8px;
       --gap:     1.5rem;
     }
@@ -20,94 +19,87 @@
     body {
       font-family: 'Poppins', sans-serif;
       background: var(--bg);
-      color: var(--text);
+      color: var(--text-dark);
       line-height: 1.6;
     }
-    header {
+    header.site-header {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      align-items: center;
       background: var(--primary);
-      color: #fff;
-      padding: var(--gap) 1rem;
-      text-align: center;
+      padding: 1rem 2rem;
     }
-    header h1 { font-weight: 300; }
-    nav {
-      margin-top: 0.5rem;
-      display: flex;
-      justify-content: center;
+    .logo-container .logo {
+      height: 50px;
+    }
+    .title-container {
+      grid-column: 2;
+      justify-self: center;
+      text-align: center;
+      color: var(--text-light);
+    }
+    .title-container h1 {
+      font-weight: 300;
+      font-size: 1.8rem;
+      margin-bottom: 0.5rem;
+    }
+    .main-nav {
+      display: inline-flex;
       gap: 1rem;
     }
-    nav a {
-      color: #fff;
+    .main-nav a {
+      color: var(--text-light);
       text-decoration: none;
       font-weight: 500;
       padding: 0.3rem 0.6rem;
       border-radius: var(--radius);
       transition: background 0.2s;
     }
-    nav a:hover {
+    .main-nav a:hover {
       background: var(--accent);
-    }
-    header .brand {
-      display: flex;
-      align-items: center;
-      text-decoration: none;
-    }
-    header .brand .logo {
-      height: 200px;
-      margin-right: 12px;
     }
     main {
       max-width: 960px;
       margin: 2rem auto;
       padding: 0 1rem;
-    }
-    .hero {
       text-align: center;
-      margin-bottom: 2rem;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      color: var(--primary);
+      margin-bottom: 0.5rem;
     }
     .hero p {
       font-size: 1.1rem;
-      margin-top: 0.5rem;
-    }
-    .grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: var(--gap);
-    }
-    .card {
-      background: var(--card-bg);
-      border-radius: var(--radius);
-      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
-      padding: 1.5rem;
-      text-align: center;
-      transition: transform 0.2s, box-shadow 0.2s;
-    }
-    .card:hover {
-      transform: translateY(-4px);
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-    }
-    .card h3 {
-      margin-bottom: 0.8rem;
-      color: var(--primary);
-    }
-    .card a {
-      display: inline-block;
-      margin-top: 1rem;
-      color: var(--accent);
-      font-weight: 500;
-      text-decoration: none;
-    }
-    footer {
-      text-align: center;
-      padding: 1.5rem 0;
-      font-size: 0.9rem;
-      color: #777;
+      color: var(--text-dark);
     }
   </style>
 </head>
 <body>
+  <header class="site-header">
+    <div class="logo-container">
+      <a href="/">
+        <img src="path/to/logo.png" alt="EMLizard Logo" class="logo">
+      </a>
+    </div>
+    <div class="title-container">
+      <h1>EMLizard Online Calculators</h1>
+      <nav class="main-nav">
+        <a href="#transmission">Transmission Line</a>
+        <a href="#core">Magnetic Core</a>
+        <a href="#wifi">WiFi Signal</a>
+      </nav>
+    </div>
+  </header>
 
-  <header>
+  <main>
+    <section class="hero">
+      <h2>Your cute lizard buddy making EM calculations quick and easy!</h2>
+      <p>Discover EMLizard’s suite of calculators—say goodbye to tedious formula entry!</p>
+    </section>
+    <!-- 추가 콘텐츠는 여기 아래에 배치하세요 -->
+  </main>
+<header>
     <a href="/" class="brand">
       <img src="https://raw.githubusercontent.com/emlizard/main-page/7554fae51a6cf96ae8ed6b8d500a428962f22ab3/images/EMLizard%20logo.svg" alt="EMLizard Logo" class="logo">
 
@@ -184,3 +176,6 @@
 
 </body>
 </html>
+<body>
+
+  
