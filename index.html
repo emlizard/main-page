@@ -195,7 +195,7 @@
     }
 
     .hero h1 {
-      font-size: clamp(2.5rem, 6vw, 4rem);
+      font-size: clamp(2rem, 5vw, 3rem);
       font-weight: 700;
       margin-bottom: 1rem;
       background: linear-gradient(135deg, var(--primary), var(--accent), var(--success));
@@ -203,6 +203,7 @@
       -webkit-text-fill-color: transparent;
       background-clip: text;
       animation: fadeInUp 0.8s ease-out;
+      line-height: 1.2;
     }
 
     .hero p {
@@ -299,6 +300,9 @@
       position: relative;
       overflow: hidden;
       animation: fadeInUp 0.6s ease-out;
+      display: flex;
+      flex-direction: column;
+      height: 100%;
     }
 
     .card::before {
@@ -324,11 +328,11 @@
     }
 
     .card-icon {
-      width: 80px;
-      height: 80px;
+      width: 120px;
+      height: 120px;
       margin: 0 auto 1.5rem;
       border-radius: var(--radius);
-      padding: 1rem;
+      padding: 1.5rem;
       background: linear-gradient(135deg, rgba(37, 99, 235, 0.1), rgba(6, 182, 212, 0.1));
       display: flex;
       align-items: center;
@@ -358,6 +362,7 @@
       color: var(--text-secondary);
       margin-bottom: 1.5rem;
       line-height: 1.6;
+      flex-grow: 1;
     }
 
     .card-link {
@@ -373,6 +378,7 @@
       transition: var(--transition);
       position: relative;
       overflow: hidden;
+      margin-top: auto;
     }
 
     .card-link::before {
